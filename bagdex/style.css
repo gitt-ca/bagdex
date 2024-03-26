@@ -1,0 +1,80 @@
+body {
+  background-color: #393d339f; 
+  background-image: url('https://t2.tudocdn.net/657023?w=1920'); 
+  background-blend-mode: overlay; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  animation: pulse 4s infinite; 
+
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #393d339f; 
+    transform: scale(1); 
+  }
+  50% {
+    background-color: #393d339f; 
+    transform: scale(0.98);
+  }
+  100% {
+    background-color: #393d339f; 
+    transform: scale(1);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
+
+table {
+  border-collapse: separate;
+  border-radius: 40px; 
+  border-spacing: 25px;
+  padding: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+td {
+  background-color: #69d6e9e7; 
+  border-radius: 10px; 
+  text-align: center;
+  padding: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+th { 
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.container table tr:nth-child(2) td {
+  transform: translateY(0);
+  transition: transform 0.5s ease; 
+}
+
+.container table tr:nth-child(2) td:hover {
+  transform: translateY(-10px);
+}
+
+.container2 table tr:nth-child(2) td {
+  transform: translateY(0);
+  transition: transform 0.5s ease; 
+}
+
+.container2 table tr:nth-child(2) td:hover {
+  transform: translateY(-10px);
+}
+
